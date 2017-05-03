@@ -1,0 +1,13 @@
+﻿@model Civilized.Models.Civilization
+
+@{
+    ViewData["Title"] = "To Do List";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+@using (Html.BeginForm())
+{
+    @Html.LabelFor(model => model.Name)
+    @Html.DropDownList("Name")
+}
